@@ -11,6 +11,10 @@ class Migration(migrations.Migration):
         ('easyaudit', '0004_auto_20170620_1354'),
     ]
 
+    run_before = [
+       ('apply', '0001_initial'),
+    ]
+
     operations = [
         migrations.AlterField(
             model_name='crudevent',
